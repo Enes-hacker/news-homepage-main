@@ -1,4 +1,4 @@
-
+@layer base{
     @font-face {
         font-family: 'Inter';
         src: url('../../assets/fonts/Inter-VariableFont_slnt\,wght.ttf')
@@ -98,3 +98,4 @@ button{
     cursor: pointer;
 }
 
+}
