@@ -1,0 +1,13 @@
+@layer utilities{
+.container{
+    max-width: 1110px;
+    margin-inline: auto;
+}
+
+@media (max-width: 72rem) {
+    .container{
+       padding-inline: 1rem;
+    }
+    
+}
+}

@@ -1,0 +1,43 @@
+@layer components{
+    .cards{
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        margin-bottom: 8rem;
+    }
+
+    @media (max-width: 40rem) {
+       .cards{
+         margin-bottom: 5rem;
+       }
+    }
+
+    .card{
+        display: flex;
+        gap: 30px;
+    }
+
+    .card-number{
+        color: #c5c6ce;
+        font-size: 32px;
+        font-weight: var(--fw-700);
+    }
+
+    .card-title{
+        margin-block: 12px 8px;
+        color: var(--clr-grayish-blue);
+        font-size: 18px;
+        font-weight: var(--fw-700);
+    }
+
+    .card-link{
+        color: var(--clr-very-dark-blue);
+        transition: color 0.3s ease-in-out;
+    }
+
+    .card-link:hover{
+        color: var(--clr-soft-red);
+    }
+
+    
+}

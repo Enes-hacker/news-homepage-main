@@ -1,0 +1,19 @@
+@layer component{
+
+    @media (max-width: 40rem) {
+        .header-overlay{
+    display: none;
+
+}
+
+.navbar.active ~ .header-overlay{
+    display: block;
+    position: fixed;
+    inset: 0; /*top:0; left:0;*/
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+    }
+
+}
+

@@ -1,0 +1,64 @@
+@layer components {
+  .header {
+    position: relative;
+    margin-top: 3.5rem;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+
+  .mobile-menu-btn {
+    display: none;
+    z-index: 30;
+  }
+  .nav-list {
+    display: flex;
+    gap: 40px;
+    color: var(--clr-grayish-blue);
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+  }
+  .nav-link {
+    color: var(--clr-dark-grayish-blue);
+  }
+
+  .nav-item .nav-link:hover {
+    color: var(--clr-soft-red);
+    transition: color 0.3s ease;
+  }
+}
+
+@media (max-width: 40rem) {
+  .nav-list {
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    width: 75%;
+    background-color: var(--clr-off-white);
+    height: 100dvh;
+    padding: 7rem 0 0 24px;
+    font-size: 18px;
+    color: var(--clr-very-dark-blue);
+    line-height: 1.5;
+    /*transform: translateX(100%);*/
+  }
+  /* Show navbar only when menu is active */
+  .navbar.active {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+    z-index: 20;
+  }
+
+  .nav-list .active {
+    transform: translateX(0);
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+}
