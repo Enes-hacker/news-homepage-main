@@ -1,4 +1,4 @@
-
+@layer components {
   .header {
     position: relative;
     margin-top: 3.5rem;
@@ -61,4 +61,5 @@
   .mobile-menu-btn {
     display: block;
   }
+}
 }
