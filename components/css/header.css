@@ -1,4 +1,4 @@
-@layer components {
+
   .header {
     position: relative;
     margin-top: 3.5rem;
@@ -27,7 +27,7 @@
     color: var(--clr-soft-red);
     transition: color 0.3s ease;
   }
-}
+
 
 @media (max-width: 40rem) {
   .nav-list {

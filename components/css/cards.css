@@ -1,4 +1,4 @@
-@layer components{
+
     .cards{
         display: grid;
         gap: 30px;
@@ -40,4 +40,3 @@
     }
 
     
-}
