@@ -18,9 +18,13 @@
     }
 
     .card-number{
-        color: #c5c6ce;
+        color: var(--clr-soft-red);
         font-size: 32px;
         font-weight: var(--fw-700);
+    }
+
+    .card-desc{
+        color: var(--clr-dark-grayish-blue);
     }
 
     .card-title{

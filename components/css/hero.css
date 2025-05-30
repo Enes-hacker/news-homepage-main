@@ -89,6 +89,15 @@
   border-bottom: 1px solid var(--clr-grayish-blue);
 }
 
+.new-link:hover{
+  color: var( --clr-soft-orange);
+}
+
+.read-more:hover{
+  background-color: var( --clr-very-dark-blue);
+  color: var(--clr-off-white);
+}
+
 .new-item:last-child {
   border-bottom: none;
   padding-bottom: 0;
